@@ -1,5 +1,6 @@
 import Foundation
 
+
 //BattleShip - determine if a point is ok to fire on given some constraints
 
 struct Position {
@@ -50,5 +51,7 @@ func difference(region: Region, minus: Region) -> Region {
     return intersection(region, region2: invert(minus))
     //imagine having a region called minus, finding every point outside of it, then finding the intersection of that outside are with input "region"
 }
+
+//these are examples of "higher order functions", they either take a function(s) as an argument(s) and/or they return a function 
 
 
